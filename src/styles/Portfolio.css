@@ -1,0 +1,32 @@
+.project-card {
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 800px;
+    width: 100%;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  .project-card:hover .card-body {
+    opacity: 1; /* Show the text when hovered */
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  

@@ -96,6 +96,7 @@
     width: 100%;
     text-align: left; /* Align links to the left */
     padding: 0;
+    color: black;
   }
 
   .nav-links.open {

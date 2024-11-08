@@ -30,7 +30,7 @@ const Portfolio = () => {
                 <Card.Title className="text-black">{project.name}</Card.Title>
                 <div className="d-flex justify-content-between">
                   <Button variant="link" href={project.githubLink}target="_blank" className="text-black" >
-                    <img src="../src/assets/github-mark.png"alt="GitHub" width={30} height={30} />
+                    <img src="/github-mark.png"alt="GitHub" width={30} height={30} />
                   </Button>
                   <Button
                     variant="link" href={project.renderLink} target="_blank" className="text-black" >

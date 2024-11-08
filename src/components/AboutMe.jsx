@@ -3,7 +3,7 @@ function AboutMe() {
   return (
     <section id="about">
       
-      <h2 className="text-center mb-5"h2> About Me</h2>
+      <h2 className="text-left mb-5"h2> About Me</h2>
       <div class="profile-container">
       
         <img className="profile" src="/myself.JPEG" alt="Your Name" class="profile-pic" />

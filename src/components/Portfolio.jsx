@@ -17,7 +17,7 @@ const Portfolio = () => {
 
   return (
   <div className="portfolio-background">
-    <h2 className="text-center mb-5">My Portfolio</h2>
+    <h2 className="text-left mb-5">My Portfolio</h2>
     <div className="container my-5">
       
       <Row>

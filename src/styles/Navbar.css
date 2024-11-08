@@ -1,4 +1,11 @@
 /* Navbar container */
+
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar {
   color: white;
   position: sticky;
@@ -6,7 +13,7 @@
   width: 100%; /* Fix width to be 100% of the viewport */
   height: 150px; /* Adjusted height */
   z-index: 10; /* Ensures the navbar stays on top */
-  font-family: cursive;
+  font-family: cursive, Handlee;
   background-color: darkgray;
   padding-left: 20px;
   padding-right: 20px; /* Ensure there's padding on both sides */

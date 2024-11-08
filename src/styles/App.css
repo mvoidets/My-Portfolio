@@ -7,12 +7,19 @@ body {
   height: 100%;
 }
 
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*style for navbar*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: handlee,cursive;
 }
 
 .main-content {
@@ -45,7 +52,8 @@ body {
 h1 h2 {
   text-align: left;
   margin-bottom: 60px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Handlee,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 
 /* Style for each form input field */
@@ -125,6 +133,8 @@ button[type="submit"]:hover {
   max-width: 600px; 
   padding: 10px; 
   line-height: 1.6; 
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 

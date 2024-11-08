@@ -8,7 +8,7 @@ import '../styles/App.css';
 import { validateEmail, validateMessage } from '../utils/helpers';
 
 export default function Contact() {
-  <h2>Contact </h2>
+  <h2 class="fw-bold fs-3">Contact </h2>
   
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');

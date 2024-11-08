@@ -2,7 +2,7 @@ export default function Resume() {
   return (
     <section id="resume">
       <div>
-        <p> Download my <a href="/MichelleVoidets_Resume.docx" download> resume</a></p>
+        <p class="fw-bold fs-4"> Download my <a href="/MichelleVoidets_Resume.docx" download> resume</a></p>
         <style dangerouslySetInnerHTML={{ __html: `
           a:hover {
             text-decoration: none;
@@ -18,23 +18,23 @@ export default function Resume() {
           }
         ` }} />
         <br></br>
-        <h2 className="text-left mb-5"h2>Resume</h2>
+        <h2 className="text-left mb-5" class="fw-bold fs-3" >Resume</h2>
         <ul className="list-unstyled">
-          <li className="h4">Front-End Proficiencies</li>
+          <li className="h4" class="fw-bold fs-4">Front-End Proficiencies</li>
           <ul>
-            <li className="h5">HTML</li>
-            <li className="h5">CSS</li>
-            <li className="h5">JavaScript</li>
-            <li className="h5">jQuery</li>
-            <li className="h5">responsive design</li>
-            <li className="h5">React</li>
+            <li className="h5" class="fw-bold fs-4">HTML</li>
+            <li className="h5" class="fw-bold fs-4">CSS</li>
+            <li className="h5" class="fw-bold fs-4">JavaScript</li>
+            <li className="h5"class="fw-bold fs-4">jQuery</li>
+            <li className="h5"class="fw-bold fs-4">responsive design</li>
+            <li className="h5"class="fw-bold fs-4">React</li>
           </ul>
-          <li className="h4">Back-End Proficiencies</li>
+          <li className="h4"class="fw-bold fs-4">Back-End Proficiencies</li>
           <ul>
-            <li className="h5">APIs</li>
-            <li className="h5">Node</li>
-            <li className="h5">Express</li>
-            <li className="h5">MySQL</li>
+            <li className="h5"class="fw-bold fs-4">APIs</li>
+            <li className="h5"class="fw-bold fs-4">Node</li>
+            <li className="h5"class="fw-bold fs-4">Express</li>
+            <li className="h5"class="fw-bold fs-4">MySQL</li>
           </ul>
         </ul>
       </div>

@@ -8,9 +8,15 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/michelle-voidets-98360194/" target="_blank" rel="noopener noreferrer" className="mx-2">
           <img src="../src/assets/linkedin.png" alt="LinkedIn" width={50} height={50} />
         </a>
+        
+        <a href="https://stackoverflow.com/users/28201915/mvoid" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <img src="/stackoverflow.png" alt="StackOverflow" width={50} height={50} />
+        </a>
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
+

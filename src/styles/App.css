@@ -1,5 +1,11 @@
 /* Style for the body */
-
+body {
+  background-color: #f4f4f4; /* Default background color (light gray) */
+  margin: 0;
+  padding: 0;
+  
+  height: 100%;
+}
 
 /*style for navbar*/
 * {
@@ -11,13 +17,14 @@
 
 .main-content {
   background-image: url('../assets/ombre-unsplash.jpg');
-
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 800px;
   width: 100%;
   border-top: black, 1px;
+   min-height: 100vh
 
 }
 
@@ -94,5 +101,31 @@ button[type="submit"]:hover {
   margin-top: 20px;
 }
 
+/* for  about me */
+/* Profile container */
+.profile-container {
+  display: flex;
+  flex-direction: column; /* Stack the profile image and bio vertically */
+  align-items: center; /* Center the items horizontally */
+  text-align: center; /* Center-align the text inside the bio */
+  margin-top: 20px; /* Add some space at the top */
+}
+
+/* Profile picture styling */
+.profile-pic {
+  width: 120px; /* Adjust the size of the circle */
+  height: 120px; /* Keep it the same size as width for a perfect circle */
+  border-radius: 50%; /* Make the image a circle */
+  object-fit: cover; /* Ensure the image fits within the circle without distortion */
+  border: 3px solid #ddd; /* Optional: Adds a border around the image */
+  margin-bottom: 20px; /* Adds some space between the image and the bio text */
+}
+
+/* Bio content styling */
+.bio {
+  max-width: 600px; /* Limit the width of the bio text */
+  padding: 10px; /* Add some padding around the text */
+  line-height: 1.6; /* Improve readability */
+}
 
 

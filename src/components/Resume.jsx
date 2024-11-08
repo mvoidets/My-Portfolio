@@ -18,7 +18,7 @@ export default function Resume() {
           }
         ` }} />
         <br></br>
-        <h2 className="display-4">Resume</h2>
+        <h2 className="text-center mb-5"h2>Resume</h2>
         <ul className="list-unstyled">
           <li className="h4">Front-End Proficiencies</li>
           <ul>

@@ -7,7 +7,7 @@
   height: 150px; /* Adjusted height */
   z-index: 10; /* Ensures the navbar stays on top */
   font-family: cursive;
-  background-color: black;
+  background-color: darkgray;
   padding-left: 20px;
   padding-right: 20px; /* Ensure there's padding on both sides */
 }
@@ -25,7 +25,7 @@
 
 /* Developer name styling */
 .developer-name {
-  color: white;
+  color: black;
 }
 
 .developer-name h1 {
@@ -53,7 +53,7 @@
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 2rem; /* Adjust font size */
   font-weight: 600; /* Thicker font */
@@ -62,14 +62,14 @@
 }
 
 .nav-links a:hover {
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
+  border-top: 4px solid  lightgray;
+  border-bottom: 4px solid  lightgray;
   padding: 6px 0;
 }
 
 .nav-links a.active {
   text-decoration: wavy;
-  color: gray;
+  color: lightgray;
 }
 
 /* Hamburger Menu (Hidden by default) */
@@ -78,7 +78,7 @@
   font-size: 30px;
   background: none;
   border: none;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 

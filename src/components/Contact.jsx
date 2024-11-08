@@ -4,7 +4,7 @@
 
 import  { useState } from 'react';
 //import './style.css';
-import '../styles/app.css';
+import '../styles/App.css';
 import { validateEmail, validateMessage } from '../utils/helpers';
 
 export default function Contact() {

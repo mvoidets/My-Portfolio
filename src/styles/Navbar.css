@@ -108,6 +108,7 @@
 
   .nav-links.open {
     display: block; /* Show the menu when open */
+    background: white
   }
 
   /* Display hamburger button on small screens */

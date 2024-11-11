@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { userEffect, useState } from 'react';
 import '../styles/App.css';
 import { validateEmail, validateMessage } from '../utils/helpers';
 import emailjs from 'emailjs-com'; //sending email 
@@ -28,6 +28,9 @@ export default function Contact() {
     
   };
 
+
+
+
   const handleFormSubmit = (e) => {
     
     e.preventDefault();
@@ -55,7 +58,7 @@ export default function Contact() {
     setSuccessMessage('Thank you! Your message has been sent.');
   };
     
-    
+
    const sendEmail = () => {
     const templateParams = {
       user_name: userName,
@@ -66,10 +69,10 @@ export default function Contact() {
   //   // Call EmailJS service to send email
     emailjs
       .send(
-        'service_gc5hmcq', // Replace with your Service ID
-        'template_r2akskn', // Replace with your Template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your Template ID
         templateParams,
-        'UEDpqJ1b1petljV-l' // Replace with your User ID
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY// Replace with your User ID
       )
       .then(
         (response) => {
@@ -80,7 +83,10 @@ export default function Contact() {
           setErrorMessage('Something went wrong. Please try again.');
         }
       );
+ 
     };
+
+    
 
   const [successMessage, setSuccessMessage] = useState('');
   return (

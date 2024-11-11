@@ -67,7 +67,7 @@ export default function Contact() {
     emailjs
       .send(
         'service_gc5hmcq', // Replace with your Service ID
-        'template_6pmmqv6', // Replace with your Template ID
+        'template_r2akskn', // Replace with your Template ID
         templateParams,
         'UEDpqJ1b1petljV-l' // Replace with your User ID
       )

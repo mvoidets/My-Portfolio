@@ -1,14 +1,10 @@
-
-
-
-
-import  { useState } from 'react';
-//import './style.css';
+import React, { useState } from 'react';
 import '../styles/App.css';
 import { validateEmail, validateMessage } from '../utils/helpers';
+import emailjs from 'emailjs-com'; //sending email 
 
 export default function Contact() {
-  <h2 class="fw-bold fs-3">Contact </h2>
+  <h2 className="fw-bold fs-3">Contact </h2>
   
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
@@ -48,15 +44,44 @@ export default function Contact() {
       return;
     }
     setErrorMessage('');
-    setSuccessMessage('Thank you! Your message has been sent.');
-  
+    
+    // Send the email with EmailJS
+    sendEmail();
+
+    // Reset the form after successful submission
     setUserName('');
     setEmail('');
     setMessage('');
-    setErrorMessage('');
-    
-    
+    setSuccessMessage('Thank you! Your message has been sent.');
   };
+    
+    
+   const sendEmail = () => {
+    const templateParams = {
+      user_name: userName,
+      user_email: email,
+      message: message,
+    };
+
+  //   // Call EmailJS service to send email
+    emailjs
+      .send(
+        'service_gc5hmcq', // Replace with your Service ID
+        'template_6pmmqv6', // Replace with your Template ID
+        templateParams,
+        'UEDpqJ1b1petljV-l' // Replace with your User ID
+      )
+      .then(
+        (response) => {
+          console.log('Email successfully sent:', response);
+        },
+        (error) => {
+          console.error('Error sending email:', error);
+          setErrorMessage('Something went wrong. Please try again.');
+        }
+      );
+    };
+
   const [successMessage, setSuccessMessage] = useState('');
   return (
     <div className="form-container">
